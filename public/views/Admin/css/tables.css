@@ -1,0 +1,96 @@
+.table-title-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-user {
+  cursor: pointer;
+}
+
+/* FORM TO FILL */
+
+.title-con h3 {
+  padding: .5rem;
+}
+
+.title-con {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-to-fill {
+  cursor: pointer;
+}
+
+.to-fill-form {
+  display: none;
+  color: black;
+}
+
+/* .inputs-con */
+
+.inputs-con {
+  align-items: center;
+  box-shadow: 1px 1px 1px  slategrey;
+  border-radius: 25px;
+  max-width: 700px;
+  margin: 0 auto;
+  display: none;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  gap: 0 2rem;
+  height: 100%;
+  justify-content: center;
+  padding: 2.5rem 0;
+}
+
+.inputs-con:hover {
+  box-shadow: 2px 2px 4px #0d6efd;
+} 
+
+.inputs-con label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.tf-sel {
+  margin-bottom: 2rem;
+}
+
+.table-data {
+  text-align: left;
+}
+
+.inputs-con input {
+  border-radius: 10px;
+  border: 1px solid slategrey;
+  outline: none;
+  margin-bottom: 2rem;
+  padding: .5rem .75rem;
+}
+
+.action-con {
+  width: 100%;
+  margin-top: -4.5rem;
+  padding: 1rem;
+}
+
+.actions {
+  align-items: center;
+  display: flex;
+  gap: 4rem  ;
+  justify-content: center;
+  padding: .5rem 0;
+}
+
+.actions input {
+  background: #0d6efd;
+  border: 1px slategrey;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* ALL TOGGGLES  */

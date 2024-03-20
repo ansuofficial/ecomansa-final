@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>Ecomansa</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/mansa-logo-removebg-preview.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/mansa-logo-removebg-preview.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+
+        body {
+            background: #2d3032;
+        }
+
+        .lm-btn {
+            background: #3b3b3b
+        }
+
+        .lm-btn a {
+            color: white
+        }
+        .lm-btn:hover + a {
+            color: #3b3b3b;
+        }
+
+        .lm-btn:hover {
+            background: #eea412;
+            color: #3b3b3b;
+        }
+
+        .logo-con img{
+            max-width: 4rem;
+        }
+
+        .icons-con {
+            display: flex;
+            align-items: center;
+        }
+
+        .mvc {
+            border-radius: 5px;
+            height: 21rem;
+            transition: .3s ease;
+        }
+
+
+        @media screen and (max-width: 584px) {
+
+            .icons-con, .icons-con1 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .vc {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+
+        
+
+        .icons-con img,.icons-con1 img{
+            width: 90%;
+        }
+
+       @media screen and (max-width: 656px) {
+         .box-slider .carousel-control-prev,
+         .box-slider .carousel-control-next{
+            display: none;
+        }
+       }
+
+ .message-box{
+        height: 100%;
+        box-shadow: 1px 1px 2px 5px solid #eea412;
+       }
+
+       .gallery {
+        width: 100%;
+        background: aliceblue;
+       }
+
+       .gallery h1 {
+        text-align: center;
+        font: 900;
+        font-size: 40px;
+        padding: 2rem;
+       }
+
+       .gic {
+        display: flex;
+        flex-wrap: wrap;
+       }
+
+       .Gallery-container > div {
+        padding: .5rem;
+       }
+
+       .Gallery-container > div img {
+        aspect-ratio: 16/9;
+        border-radius: 5px;
+        width: 50%;
+        padding: 1rem;
+       }
+
+       .Gallery-container > div img:hover {
+        scale: 1.01;
+        transition: .2s ease-in-out;
+       }
+
+       .bc {
+          display: flex;
+          justify-content: center;
+          
+       }
+
+       .bc button {
+           outline: none;
+           background: #eea412;
+           border-radius: 25px;
+           border: none;
+           padding: 0.5rem 1rem;
+       }
+
+       .upcomming {
+        background: linear-gradient(45deg,#4c5a7d, #eea412);
+        height: initial; 
+        padding: 2rem;
+       }
+
+       .upcoming-content {
+        display: flex;
+        padding: 2rem;
+        gap: 2rem;
+
+       }
+
+        .upcoming-content li {
+            line-height: 2;
+        }
+
+       .upcoming-content img {
+        border-radius: 10px;
+        width: 100%;
+       }
+
+       .upcomming-title {
+        color: white;
+        font-size: 36px;
+       }
+
+       .content-con {
+        color: white;
+        display: flex;
+        width: 400%;
+        justify-content: space-between;
+        flex-direction: column;
+       }
+
+        .content-con span {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: .75rem ;
+        }
+
+        .date {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .date button {
+            background: #eea412;
+            border: none;
+            border-radius: 7px;
+            outline: none;
+            padding: 0.5rem .85rem;
+        }
+
+
+@media screen and (max-width: 990px) {
+    .upcoming-content {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 442px) {
+    .date h1, h3 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 328px) {
+    .date h1, h3 {
+        font-size: .9rem;
+    }
+}
+
+    </style>
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+	
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<div class="logo-con">
+                    <a href="/"> <img src="./images/mansa-logo-removebg-preview.png" alt=""></a>
+                </div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+						<li class="nav-item"><a class="nav-link" href="/stories">Stories</a></li>
+						<li class="nav-item btn"><a class="nav-link" href="/admin">Admin</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel" data-pause="hover" data-interval="3000" >
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleControls" data-slide-to="1"></li>
+			<li data-target="#carouselExampleControls" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+				<div id="home" class="first-section" style="background-image:url('./images/Whatsa.jpeg');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-center">
+									<div class="big-tagline">
+										<h2><strong>The Economics and Management Students’ Association </strong> (ECOMANSA)</h2>
+										<p class="lead">Empowering Minds, Enriching Lives: ECOMANSA, Where Academic Excellence Meets Personal Growth<p>
+											<a href="/stories" class="hover-btn-new"><span>Success stories</span></a>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="/about" class="hover-btn-new"><span>Read More</span></a>
+									</div>
+								</div>
+							</div><!-- end row -->            
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<div class="carousel-item">
+				<div id="home" class="first-section" style="background-image:url('images/ecamp.jpeg');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-center">
+									<div class="big-tagline">
+										<h2 data-animation="animated zoomInRight">Ecomansa is The<strong> Solution</strong></h2>
+										<p class="lead" data-animation="animated fadeInLeft">Empowering Minds, Enriching Lives: ECOMANSA, Where Academic Excellence Meets Personal Growth</p>
+											<a href="/stories" class="hover-btn-new"><span>Success stories</span></a>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="/about" class="hover-btn-new"><span>Read More</span></a>
+									</div>
+								</div>
+							</div><!-- end row -->            
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<div class="carousel-item">
+				<div id="home" class="first-section" style="background-image:url('images/ecomansa/mansan.jpg');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-center">
+									<div class="big-tagline">
+										<h2 data-animation="animated zoomInRight"><strong>Ecomansa</strong> the school of exellence</h2>
+										<p class="lead" data-animation="animated fadeInLeft">Empowering Minds, Enriching Lives: ECOMANSA, Where Academic Excellence Meets Personal Growth</p>
+											<a href="/stories" class="hover-btn-new"><span>Success stories</span></a>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="/about" class="hover-btn-new"><span>Read More</span></a>
+									</div>
+								</div>
+							</div><!-- end row -->            
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<!-- Left Control -->
+			<a class="new-effect carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<span class="fa fa-angle-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+
+			<!-- Right Control -->
+			<a class="new-effect carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				<span class="fa fa-angle-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+	
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>About</h3>
+                </div>
+            </div><!-- end title -->
+        
+            <div class="row ">
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mvc">
+                <!-- <h1 class="text-center">Mission</h1> -->
+                   <div class="icons-con d-flex justify-content-center">
+                   <img src="/images/ecomansa/trip.jpg" alt="Mission">
+                   </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <p> ECOMANSA is committed to creating a vibrant academic community by representing, guiding, and serving students, fostering an environment that enriches educational experiences and advances individual interests. Through proactive initiatives and inclusivity, we strive to address academic needs, enhance personal growth, and contribute to the overall well-being of our diverse student body. Our mission is to empower students with the resources and support they need to thrive academically and personally, fostering a strong sense of belonging and community within the University of The Gambia's School of Business and Public Administration.</p>      
+                </div><!-- end messagebox -->
+                </div><!-- end col -->
+			</div>
+
+			<div class="row vc">
+				
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <p>ECOMANSA envisions a future where knowledge, leadership, innovation, and patriotism are the cornerstones of student development. We aspire to inspire students to become lifelong learners, encouraging critical thinking and compassionate leadership. Our vision extends to nurturing a sense of responsibility and civic duty, with the ultimate goal of empowering students to make meaningful contributions to their communities and play a vital role in national development.</p>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+<!-- <i class="flaticon-achievement"></i> -->
+               <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mvc">
+                <!-- <h1 class="text-center">Vision</h1> -->
+                   <div class="icons-con1 d-flex justify-content-center">
+                    <img src="/images/ecomansa/DSCF0659.jpg">
+                   </div>
+                </div>
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <section class="upcomming">
+        <div class="upcoming-container">
+            <div class="upcoming-wrapper">
+                <div>
+                    <h1 class="upcomming-title">Upcoming Events</h1>
+                </div>
+                <div class="upcoming-content">
+                    <div>
+                        <img src="/images/ecomansa/cultural-night/DSCF2015.jpg" alt="Upcoming image">
+                    </div>
+                    <div class="content-con">
+                       <div>
+                        <p><span>Some of the activities ECOMANSA does during the research trip.</span> <br> <ul>
+                            <li>Data collection: this is the most important and crucial aspect of ECOMANSA research trip. This involves group of individuals call enumerators who will collect information from this institutions and people base on the research theme.</li>
+                            <li>Cultural Night: cultural diversity is very vital because it allows different cultures to be displayed.</li>
+                            <li>Site Visits: during every research trip, ECOMANSA also embarks on sites visits in the country where research is taking place. The visits sites involve both government and private institutions.</li>
+                        </ul>
+                    </p>
+                       </div>
+                       <div>
+                        <div class="date">
+                         <button><a href="/events">Learn more</a></button>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</section>
+
+    <section class="gallery">
+        <h1>Our Gallery</h1>
+        <div class="Gallery-container">
+            <div class="gic">
+                <img src="images/ecomansa/planting.jpg" alt="">
+                <img src="images/ecomansa//cultural-night/DSCF2169.jpg" alt="">
+                <img src="images/ecomansa/SITE VISIT/DSCF3308.jpg" alt="">
+                <img src="./images/Whatsa.jpeg" alt="">
+            </div>
+            <div class="bc">
+               <button><a href="/gallery">Show more</a></button>
+           </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Our Socials</h3>
+                        </div>
+						<div class="footer-right">
+							<ul class="footer-links-soi">
+								<li><a href="https://www.facebook.com/ECOMANSA" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://youtu.be/dTjb3AHp4qg?si=w_DinmeKGASRF7PP" target="_blank"><i class="fa fa-youtube"></i></a></li>
+								<li><a href=" https://www.instagram.com/reel/C3f6XCEsLIQ/?igsh=ZWI2YzEzYmMxYg==" target="_blank"><i class="fa fa-instagram"></i></a></li>
+							</ul><!-- end links -->
+						</div>						
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Partnerships</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li>CHOICE FM</li>
+                            <li>GOMINDZ Inc.</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">ecomansa2019@gmail.com</a></li>
+                            <li>Faraba, The Gambia</li>
+                            <li>SG: +220 3555869 | IPRO: +220 3630261</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name">&copy;Gomindz Inc.</p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+	<script src="js/timeline.min.js"></script>
+	<script>
+		timeline(document.querySelectorAll('.timeline'), {
+			forceVerticalMode: 700,
+			mode: 'horizontal',
+			verticalStartPosition: 'left',
+			visibleItems: 4
+		});
+	</script>
+</body>
+</html>

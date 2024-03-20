@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Basic -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Login | Ecomansa</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css"
+    />
+    <link rel="shortcut icon" href="../images/mansa-logo-removebg-preview.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="../css/versions.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/custom.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+
+    <!-- Modernizer for Portfolio -->
+    <script src="../js/modernizer.js"></script>
+  </head>
+  <body class="host_version" id="main-container">
+    <div id="preloader">
+      <div class="loader-container">
+        <div class="progress-br float shadow">
+          <div class="progress__item"></div>
+        </div>
+      </div>
+    </div>
+
+    <header class="top-navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="logo-con">
+            <a href="/"> <img src="./images/mansa-logo-removebg-preview.png" alt=""></a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbars-host"
+            aria-controls="navbars-rs-food"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbars-host">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/stories">Stories</a>
+              </li>
+              <li class="nav-item btn active">
+                <a class="nav-link" href="/admin">Admin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End header -->
+    <div class="container">
+      <div class="screen">
+        <div class="screen__content">
+          <form class="login" id="loginForm">
+            <div class="login__field">
+              <i class="login__icon fas fa-user"></i>
+              <input
+                id="username"
+                type="text"
+                class="login__input"
+                placeholder="Username"
+                name="username"
+                required
+              />
+            </div>
+            <div class="login__field">
+              <i class="login__icon fas fa-lock"></i>
+              <input
+                id="password"
+                type="password"
+                class="login__input"
+                placeholder="Password"
+                name="password"
+                required
+              />
+            </div>
+            <p id="error-message" class="error-message"></p>
+
+            <button type="button" onclick="submitForm()" class="button login__submit">
+              <span class="button__text">Log In Now</span>
+              <i class="button__icon fas fa-chevron-right"></i>
+            </button>
+          </form>
+        </div>
+        <div class="screen__background">
+          <span
+            class="screen__background__shape screen__background__shape4"
+          ></span>
+          <span
+            class="screen__background__shape screen__background__shape3"
+          ></span>
+          <span
+            class="screen__background__shape screen__background__shape2"
+          ></span>
+          <span
+            class="screen__background__shape screen__background__shape1"
+          ></span>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Our Socials</h3>
+                        </div>
+						<div class="footer-right">
+							<ul class="footer-links-soi">
+								<li><a href="https://www.facebook.com/ECOMANSA" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://youtu.be/dTjb3AHp4qg?si=w_DinmeKGASRF7PP" target="_blank"><i class="fa fa-youtube"></i></a></li>
+								<li><a href=" https://www.instagram.com/reel/C3f6XCEsLIQ/?igsh=ZWI2YzEzYmMxYg==" target="_blank"><i class="fa fa-instagram"></i></a></li>
+							</ul><!-- end links -->
+						</div>						
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Partnerships</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li>CHOICE FM</li>
+                            <li>GOMINDZ Inc.</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">ecomansa2019@gmail.com</a></li>
+                            <li>Faraba, The Gambia</li>
+                            <li>SG: +220 3555869 | IPRO: +220 3630261</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+  <div class="copyrights">
+      <div class="container">
+          <div class="footer-distributed">
+              <div class="footer-center">                   
+                  <p class="footer-company-name">&copy;Gomindz Inc.</p>
+              </div>
+          </div>
+      </div><!-- end container -->
+  </div><!-- end copyrights -->
+
+  <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <script src="../js/login.js"></script>
+    <script src="../js/all.js"></script>
+    <script src="../js/custom.js"></script>
+  </body>
+</html>

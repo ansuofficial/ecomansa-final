@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "fullname": "Ansu Badjie",
+    "matNo": 3111,
+    "contact": 3338111,
+    "major": "Developer",
+    "amount": 5000,
+    "date": "03-16-2024",
+    "gender": "Male",
+    "intake": "Year 3 First Semester",
+    "status": "Completed"
+  }
+]

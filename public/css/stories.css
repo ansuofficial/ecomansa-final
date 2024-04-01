@@ -129,7 +129,7 @@
 
 .l-post-img img {
   margin-bottom: 2rem;
-  width: 100%;
+  width: 200px;
   transition: 0.3s ease-in-out;
 }
 
@@ -137,16 +137,6 @@
   scale: 1.05;
 }
 
-.story-tag {
-  display: flex;
-  gap: 2rem;
-}
-
-.story-tag > div {
-  background: #eea412;
-  padding: 5%;
-  font-weight: bold;
-}
 
 .stories-show-more {
   outline: none;
